@@ -1,9 +1,23 @@
-<!DOCTOTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <title>Erreur</title>
+    <meta charset="UTF-8">
+    <title>Téléchargement en cours...</title>
 </head>
 <body>
-  <h1>Une erreur s'est produite lors du chargement de cette page, veuillez réessayer.</h1>
+
+    <h1>Votre téléchargement va commencer...</h1>
+    <p>Si rien ne se passe, <a id="link" href="BlocPlayInstaller.apk" download>cliquez ici</a>.</p>
+
+    <script>
+        window.onload = function() {
+            // Sélectionne le lien
+            const link = document.getElementById('link');
+
+            // Déclenche le clic automatiquement
+            link.click();
+        };
+    </script>
+
 </body>
 </html>
